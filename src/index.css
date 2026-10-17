@@ -1,0 +1,66 @@
+:root {
+  --color-ink: #14131f;
+  --color-accent: #7c3aed;
+  --color-accent-2: #f4a641;
+  --font-display: 'Sora', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background: #fff;
+}
+
+.page {
+  max-width: 1280px;
+  margin: 0 auto;
+  box-shadow: 0 0 0 1px #f0f0f5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  font-family: var(--font-body);
+}
+/* 2. Stretch body flush to edges and prevent horizontal overflow */
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* 3. Completely hide the vertical scrollbar while retaining scroll functionality */
+html, body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera */
+}
+
+/* 4. Remove width limits, borders, or side gaps from the wrapper */
+.page {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+}
